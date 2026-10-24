@@ -1,0 +1,755 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background-color: #f7e8e5;
+}
+/* Bakery photo at the top */
+.photo-banner img{
+    display: block;
+    width: 100%;
+    height: 55vh;
+    object-fit: cover;
+    object-position: center;
+}
+/* Welcome panel underneath */
+.welcome{
+    min-height: 42vh;
+   background-color: #f7e8e5;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   padding: 30px 20px;
+   box-sizing: border-box;
+}
+/* Bakery Name */
+.logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 55px;
+    color: #914763;
+    margin: 0 0 30px;
+    letter-spacing: 1px;
+}
+/* Main Heading */
+.welcome h1{
+    font-size: 38px;
+    color: #7B294F;
+    margin: 0 0 30px;
+}
+/*Explore Button */
+.welcome a{
+    display: inline-block;
+    color:#914763;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 20px 30px;
+    border: 2px solid #914763;
+    border-radius: 12px;
+    transition: background-color 0.3s, color 0.3s;
+}
+/* Button hover effect */
+.welcome a:hover{
+    background-color: #914763;
+    color:#ffffff;
+}
+/* Tagline */
+.tagline{
+    color: #7B294F;
+    font-size: 18px;
+    margin: 0 0 45px;
+}
+/* Explore page layout */
+.explore-layout {
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: calc(100vh - 73px);
+    padding: 30px 40px;
+}
+.explore-content {
+    flex: 1;
+    min-width: 0;
+}
+.explore-hero {
+    margin: 0 0 28px;
+}
+.explore-hero h1 {
+    color: #7B294F;
+    font-size: 40px;
+    margin: 0 0 14px;
+}
+.explore-hero p {
+    color: #914763;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+    max-width: 450px;
+}
+/* Explore links */
+.navigate {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 20px;
+    background-color: #7B294F;
+    border-radius: 14px;
+}
+.navigate a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 18px 0;
+    color: #FFF9F7;
+    text-decoration: none;
+    border-bottom: 1px solid #DFA9BC;
+    transition: padding 0.25s ease, color 0.25s ease;
+}
+.navigate a:last-child {
+    border-bottom: none;
+}
+.explore-link-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.explore-link-text strong {
+    font-size: 19px;
+    font-weight: 600;
+}
+.explore-link-text small {
+    font-size: 14px;
+    color: #F7E8E5;
+}
+.explore-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    border: 1px solid #DFA9BC;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: background-color 0.25s ease,
+                color 0.25s ease;
+}
+.navigate a:hover {
+    padding-left: 8px;
+    color: #FFFFFF;
+}
+.navigate a:hover .explore-arrow {
+    background-color: #F7E8E5;
+    color: #7B294F;
+}
+/* Explore image */
+.explore-image {
+    flex: 1;
+    min-width: 0;
+}
+.explore-image img {
+    display: block;
+    width: 100%;
+    height: calc(100vh - 133px);
+    object-fit: cover;
+    object-position: center;
+    border-radius: 14px;
+}
+/* Styling the header */
+.site-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #f7e8e5;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dfa9bc;
+}
+.header-logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+    color: #914763;
+    text-decoration: none;
+}
+.header-nav{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+}
+.header-nav a{
+    color: #914763;
+    text-decoration: none;
+}
+.header-nav a:hover{
+    color: #7B294F;
+    text-decoration: none;
+}
+.nav-dot{
+    color: #914763;
+    font-size: 14px;
+    line-height: 1;
+}
+.contact-layout{
+    display: flex;
+    gap: 40px;
+    padding: 30px 35px;
+    background-color: #f7e8e5;
+    align-items: flex-start;
+    min-height: 80vh;
+    box-sizing: border-box;
+}
+.contact-intro{
+    flex: 0 0 40%;
+    color: #7B294F;
+}
+.contact-intro h1{
+    color: #7B294F;
+    font-size: 50px;
+    margin-top: 0;
+}
+.contract-intro p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.form-container {
+    flex: 1;
+    background-color: #7B294F;
+    box-sizing: border-box;
+    border-radius: 10px;  
+    padding: 30px;    
+}
+/* Contact form text fields */
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    background-color: #f7e8e5;
+    border: 1px solid #f7e8e5;
+    box-sizing: border-box;
+}
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    background-color: #f7e8e5;
+    border: 1px solid #DFA9BC;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font: inherit;
+    resize: none;
+}
+/* Submit and buttons */
+input[type="submit"]{
+    font-size: 16px;
+    width: 100%;
+    padding: 10px 18px;
+    margin-top: 10px;
+    background-color: #f7e8e5;
+    color: #7B294F;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+input[type="submit"]:hover {
+    background-color: #E8C8D2;
+    transition: background-color 0.3s ease;
+}
+/* Contact form labels */
+.form-container label {
+    color: #f7e8e5;
+}
+/* Website footer */
+.site-footer {
+    background-color: #7B294F;
+    color: #FFF9F7;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+/* Footer logo */
+.site-footer h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    margin: 0 0 8px;
+}
+.site-footer > p {
+    font-size: 14px;
+}
+/* Footer tagline */
+.site-footer p {
+    margin: 8px 0 18px;
+}
+/* Footer navigation links */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 15px 0;
+    border-top: 1px solid #DFA9BC;
+    border-bottom: 1px solid #DFA9BC;
+}
+/* Footer link appearance */
+.footer-links a {
+    color: #FFF9F7;
+    text-decoration: none;
+}
+/* Hover effect */
+.footer-links a:hover {
+    color: #F7E8E5;
+    text-decoration: none;
+}
+/* Copyright text */
+.site-footer .copyright {
+    font-size: 12px;
+    margin: 18px 0 0;
+}
+.story-intro h1 {
+    color: #7B294F;
+    text-align: center;
+    font-size: 45px;
+}
+.story-handwritten {
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    line-height: 1.8;
+    color: #7B294F;
+    text-align: center;
+}
+.story-signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    margin-top: 30px;
+    color: #7B294F;
+    text-align: center;
+}
+.story-signature-name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    margin-top: 5px;
+    color: #7B294F;
+    text-align: center;
+}
+.catering-page{
+    background-color: #f7e8e5;
+    padding: 30px 25px;
+    margin: 0 25px;
+}
+.catering-page h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 52px;
+    color: #7B294F;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.catering-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.catering-card{
+    background-color: #7B294F;
+    border-radius: 12px;
+    overflow: hidden;
+    flex: 1;
+    box-sizing: border-box;
+}
+.catering-card img{
+    display: block;
+    width: calc(100% - 20px);
+    height: 200px;
+    object-fit: cover;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+.catering-card-content{
+    padding: 18px;
+    color: #f7e8e5;
+    text-align: center;
+}
+.catering-card-content h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 0;
+    color: #f7e8e5;
+}
+.catering-item{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: 100%;
+}
+.catering-item img{
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.visit-page {
+    background-color: #F7E8E5;
+    padding: 25px;
+    margin: 0 25px;
+}
+.visit-content {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 35px;
+    align-items: stretch;
+}
+.visit-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 0;
+    color: #7B294F;
+}
+.visit-details h1 {
+    font-size: 42px;
+    color: #7B294F;
+    margin: 0 0 35px;
+}
+.visit-info {
+    margin-bottom: 25px;
+}
+.visit-info h2 {
+    font-size: 20px;
+    margin: 0 0 8px;
+}
+.visit-info p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+.visit-image img {
+    display: block;
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+    border-radius: 18px;
+    object-position: center;
+    border: 2px solid #DFA9BC;
+}
+.visit-info a {
+    color: #7B294F;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.directions-button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 18px;
+    background-color: #F7E8E5;
+    color: #7B294F;
+    border: 1px solid #DFA9BC;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.directions-button:hover {
+    background-color: #E8C8D2;
+}
+/* Discover dropdown */
+.dropdown {
+    position: relative;
+}
+.dropdown-toggle {
+    background: none;
+    border: none;
+    padding: 6px 0;
+    color: #914763;
+    font: inherit;
+    cursor: pointer;
+}
+.dropdown-arrow {
+    font-size: 14px;
+    margin-left: 3px;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    background-color: #FFF9F7;
+    border: 1px solid #DFA9BC;
+    border-radius: 8px;
+    padding: 8px 0;
+    box-shadow: 0 4px 12px rgba(123, 41, 79, 0.12);
+    z-index: 10;
+}
+.dropdown-menu a {
+    display: block;
+    padding: 10px 14px;
+    color: #914763;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.dropdown-menu a:hover {
+    background-color: #F7E8E5;
+    color: #7B294F;
+}
+/* Show dropdown on hover or keyboard focus */
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    display: block;
+}
+/* Contact form validation messages */
+#nameError,
+#emailError,
+#messageError {
+    color: #f7e8e5;
+    font-size: 14px;
+    margin: 6px 0 12px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+/* Highlight fields that need attention */
+#fname:invalid,
+#Email:invalid,
+#message:invalid {
+    border-color: #DFA9BC;
+}
+#nameError:empty,
+#emailError:empty,
+#messageError:empty {
+    display: none;
+}
+/* Highlight a field when it has an error */
+/* Got help with this from the internet */
+.field-error {
+    border: 1px solid #7B294F !important;
+    background-color: #FFF9F7;
+    outline: none;
+}
+/* Show a soft focus ring when the visitor selects a field */
+#fname:focus,
+#Email:focus,
+#message:focus {
+    outline: 2px solid #DFA9BC;
+    outline-offset: 2px;
+}
+.product-card h3 {
+    color: #7B294F;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 18px 0 8px;
+}
+.product-card .product-price {
+    color: #494447;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 6px;
+}
+/* Smoothie product images */
+.product-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 5px;
+}
+/* Smoothie section layout */
+.menu-page {
+    padding: 40px;
+}
+.menu-title {
+    text-align: center;
+    color: #7B294F;
+    margin-bottom: 35px;
+}
+.menu-categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 55px;
+}
+.menu-categories a {
+    color: #914763;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.menu-categories a:hover,
+.menu-categories a.active {
+    color: #7B294F;
+    border-bottom: 1px solid #DFA9BC;
+    padding-bottom: 5px;
+}
+/* Smoothies heading and decorative lines */
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #914763;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.section-heading::before,
+.section-heading::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #DFA9BC;
+}
+/* Three product cards in one row */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+.product-card {
+    min-width: 0;
+    text-align: center;
+}
+/* Images sized to fit their individual cards */
+.product-card img {
+    display: block;
+    width: 75%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.product-card p {
+    color: #625D5F;
+}
+/*Styling the explore icons*/
+.explore-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: #FFF9F7;
+    color: #7B294F;
+    font-size: 24px;
+}
+.navigate a {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.explore-link-text {
+    flex: 1;
+}
+
+/* Mobile responsive styling */
+@media (max-width: 600px) {
+
+    /* Header and navigation */
+    .site-header {
+        padding: 15px 18px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    .header-nav {
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 14px;
+    }
+    /* Explore page */
+    .explore-layout {
+        flex-direction: column;
+        gap: 25px;
+        padding: 20px;
+    }
+    .explore-hero h1 {
+        font-size: 32px;
+    }
+    .explore-image img {
+        height: 300px;
+    }
+    /* Contact page */
+    .contact-layout {
+        flex-direction: column;
+        gap: 25px;
+        padding: 20px;
+    }
+    .contact-intro {
+        flex: 1 1 auto;
+    }
+    .contact-intro h1 {
+        font-size: 36px;
+    }
+    .form-container {
+        width: 100%;
+        padding: 20px;
+    }
+    input[type="text"] {
+        width: 100%;
+    }
+    /* Catering page */
+    .catering-page {
+        margin: 0;
+        padding: 20px;
+    }
+    .catering-page h1 {
+        font-size: 36px;
+    }
+    .catering-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    /* Visit page */
+    .visit-page {
+        margin: 0;
+        padding: 20px;
+    }
+    .visit-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .visit-details h1 {
+        font-size: 34px;
+        margin-bottom: 25px;
+    }
+    .visit-image img {
+        height: 300px;
+    }
+    /* Menu pages */
+    .menu-page {
+        padding: 20px;
+    }
+    .menu-categories {
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 35px;
+    }
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px 12px;
+    }
+    .product-card img {
+        width: 100%;
+    }
+    .section-heading {
+        font-size: 20px;
+        gap: 10px;
+    }
+    /* Story page */
+    .story-intro h1 {
+        font-size: 34px;
+    }
+    .story-handwritten {
+        font-size: 21px;
+    }
+    /* Footer */
+    .footer-links {
+        gap: 15px;
+    }
+    .site-footer h2 {
+        font-size: 30px;
+    }
+}

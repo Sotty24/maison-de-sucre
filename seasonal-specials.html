@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang= 'en'><!-- Adding the lang attribute here -->
+    <head>
+     <!-- Declaring the character encoding -->   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison de Sucre</title>
+<!-- Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel= "stylesheet" href="style.css">
+    </head>
+    <body>
+   <header class="site-header">
+    <a href="index.html" class="header-logo">MAISON DE SUCRE</a>
+
+    <nav class="header-nav">
+        <a href="index.html">Home</a>
+        <span class="nav-dot">·</span>
+        <a href="explore.html">Explore</a>
+        <span class="nav-dot">·</span>
+
+        <div class="dropdown">
+            <button class="dropdown-toggle" type="button">
+                Discover
+            </button>
+
+            <div class="dropdown-menu">
+                <a href="menu.html">Menu</a>
+                <a href="catering.html">Catering</a>
+                <a href="story.html">Our Story</a>
+                <a href="visit.html">Visit Us</a>
+            </div>
+        </div>
+
+        <span class="nav-dot">·</span>
+        <a href="contact.html">Contact</a>
+    </nav>
+   </header>
+
+<main class="menu-page">
+
+    <h1 class="menu-title">Our Menu</h1>
+
+    <!-- Menu category navigation -->
+    <nav class="menu-categories" aria-label="Menu categories">
+        <a href="menu.html">Smoothies</a>
+        <a href="iced-drinks.html">Iced Drinks</a>
+        <a href="hot-drinks.html">Hot Drinks</a>
+        <a href="cakes.html">Cakes & Tarts</a>
+        <a href="bread.html">Bread & Pastries</a>
+        <a href="seasonal-specials.html" class="active">Seasonal Specials</a>
+    </nav>
+
+    <!-- Smoothies section -->
+    <section class="menu-section">
+
+        <h2 class="section-heading">
+            <span>Seasonal Specials</span>
+        </h2>
+
+             <div class="product-grid">
+
+            <!-- Special 1 -->
+            <article class="product-card">
+                <img src="images/pumpkin-spice-latte.jpeg"
+                     alt="Pumpkin Spice Latte">
+                <h3>Pumpkin Spice Latte</h3>
+                <p class="product-price">£6.50</p>
+                <p>A cosy blend of espresso,<br>
+                     creamy milk and warming pumpkin spice,<br> topped with a hint of cinnamon.</p>
+            </article>
+
+            <!-- Special 2 -->
+            <article class="product-card">
+                <img src="images/raspberry-choc-tart.jpeg"
+                     alt="Raspberry White Chocolate Tart">
+                <h3>Raspberry White Chocolate Tart</h3>
+                <p class="product-price">£8.95</p>
+                <p>Buttery pastry filled with <br>
+                    silky white chocolate cream and<br>
+                     topped with fresh, tangy raspberries.</p>
+            </article>
+
+            <!-- Special 3 -->
+            <article class="product-card">
+                <img src="images/strawberry-cooler.jpeg"
+                     alt="Strawberry Rose Cooler">
+                <h3>Strawberry Rose Cooler</h3>
+                <p class="product-price">£6.75</p>
+                <p>Sweet strawberries meet delicate<br>
+                     floral rose notes in a light, <br>refreshing seasonal drink.</p>
+            </article>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <h2>Maison de Sucre</h2>
+    <p>A Little House of Sweetness</p>
+
+    <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <p class="copyright">
+        © 2026 Maison de Sucre · All rights reserved
+    </p>
+</footer>
+    </body>
+</html>

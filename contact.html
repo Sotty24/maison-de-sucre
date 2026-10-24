@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang= 'en'><!-- Adding the lang attribute here -->
+    <head>
+     <!-- Declaring the character encoding -->   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore | Maison de Sucre </title>
+    <link rel= "stylesheet" href="style.css">
+    <!-- Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <a href="index.html" class="header-logo">MAISON DE SUCRE</a>
+
+        <nav class="header-nav">
+            <a href="index.html">Home</a>
+            <span class="nav-dot">·</span>
+            <a href="explore.html">Explore</a>
+            <span class="nav-dot">·</span>
+
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button">
+                    Discover
+                </button>
+
+                <div class="dropdown-menu">
+                    <a href="menu.html">Menu</a>
+                    <a href="catering.html">Catering</a>
+                    <a href="story.html">Our Story</a>
+                    <a href="visit.html">Visit Us</a>
+                </div>
+            </div>
+
+            <span class="nav-dot">·</span>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+  <main class="contact-layout">
+    <section class="contact-intro">
+      <h1>Contact Us</h1>      
+<p>Questions, cravings or cake ideas?<br>We are all ears. </p>
+    </section>
+ 
+<!-- I added the forms here along with the submit button -->
+<div class="form-container">
+<form id="contactForm">
+
+  <label for="fname">Name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <p id="nameError"></p><br>
+
+  <label for="Email">Email Address:</label><br>
+  <input type="text" id="Email" name="Email"><br>
+  <p id="emailError"></p><br>
+
+  <label for="message">Leave us a message:</label><br>
+<textarea id="message" name="message" rows="5"></textarea><br>
+  <p id="messageError"></p><br>
+
+  <input type="submit" value="Submit">
+</form>
+</div>
+</main>
+
+<footer class="site-footer">
+    <h2>Maison de Sucre</h2>
+    <p>A Little House of Sweetness</p>
+
+    <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <p class="copyright">
+        © 2026 Maison de Sucre · All rights reserved
+    </p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>  
+</html>
